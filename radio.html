@@ -32,9 +32,14 @@
             border-radius: 10px;
             margin-top: 15px;
         }
+        .audio-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            margin-top: 15px;
+        }
         audio {
             width: 100%;
-            margin-top: 15px;
         }
     </style>
 </head>
@@ -43,19 +48,26 @@
         <h3>Bem-vindo à estação:</h3>
         <marquee>🎶 NOSTALGIA 🎶</marquee>
         <h3>A melhor do país!</h3>
-        <img src="faroeste caboclo.jpeg" alt="Capa de Faroeste Caboclo">
-        <h1>Faroeste Caboclo - Legião Urbana (1987)</h1>
-        <audio controls>
-            <source src="07 - Faroeste Caboclo.mp3" type="audio/mpeg">
-            Seu navegador não suporta áudio.
-        </audio>
 
-        <img src="que pais.jpeg" alt="Capa de Que País É Este">
-        <h1>Que País É Este? - Legião Urbana (1987)</h1>
-        <audio controls>
-            <source src="01 - Que País É Este.mp3" type="audio/mpeg">
-            Seu navegador não suporta áudio.
-        </audio>
+        <div class="audio-container">
+            <div>
+                <img src="faroeste caboclo.jpeg" alt="Capa de Faroeste Caboclo">
+                <h1>Faroeste Caboclo - Legião Urbana (1987)</h1>
+                <audio controls>
+                    <source src="07 - Faroeste Caboclo.mp3" type="audio/mpeg">
+                    Seu navegador não suporta áudio.
+                </audio>
+            </div>
+
+            <div>
+                <img src="que pais.jpeg" alt="Capa de Que País É Este">
+                <h1>Que País É Este? - Legião Urbana (1987)</h1>
+                <audio controls>
+                    <source src="01 - Que País É Este.mp3" type="audio/mpeg">
+                    Seu navegador não suporta áudio.
+                </audio>
+            </div>
+        </div>
     </div>
 </body>
 </html>
